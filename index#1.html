@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1e293b;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: #f1f5f9;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero span {
+      color: #38bdf8;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+
+    section {
+      padding: 60px 50px;
+    }
+
+    h2.section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #38bdf8;
+    }
+
+    .about, .skills, .projects, .contact {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .skill {
+      background: #1e293b;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e293b;
+      margin-top: 40px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: #38bdf8;
+      color: #0f172a;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+    }
+
+    .hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #38bdf8;
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
+  transition: 0.3s;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mehul's Portfolio</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-container">
+    
+    <div class="hero-text">
+      <h2>Hello, I'm <span>Mehul raj</span></h2>
+      <p>A passionate student & aspiring web developer</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+
+    <div class="hero-image">
+      <img src=" C:\Users\HP\Documents\passport size.jpg  " alt="My Photo">
+    </div>
+
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="about">
+    <p>
+     Hello, my name is [Your Name]. I am currently pursuing a diploma in Computer Science and Engineering (CSE). I completed my 10th grade from Vidya Niketan School, Patna.
+
+I have a keen interest in technology and enjoy learning about computers and software, which is why I chose the CSE branch for my diploma. Apart from my academic interests, I enjoy spending my free time playing mobile and PC games. I also like outdoor activities such as badminton and cricket, which help me stay active and refreshed.
+
+I am always eager to learn new skills and improve myself, both personally and professionally.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills">
+    <div class="skills-list">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Java</div>
+      <div class="skill">Python</div>
+      <div class="skill">C</div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio website to showcase my work.</p>
+    </div>
+    
+
+   <div class="project-card">
+      <h3>Smart voice command Intelligence</h3>
+      <p>A basic project that runs on your voice commands </p>
+    </div>
+   
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <div class="contact">
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© MEHUL RAJ | Student Portfolio</p>
+</footer>
+
+</body>
+</html>
